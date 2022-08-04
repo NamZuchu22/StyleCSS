@@ -16,7 +16,7 @@ Mỗi component sẽ có dạng tên:{} -> ex:
 
 Lưu tất cả các style của mỗi component muốn css ở trong styles
 ```
-const styles = StyleSheet.create({
+const stylesCSS = StyleSheet.create({
    container:{},
    tv1:{},
    tv2:{},
@@ -27,5 +27,10 @@ const styles = StyleSheet.create({
 
 # Step3 : Sau khi định nghĩa style thì sẽ sử dụng bằng cách gán giá trị vào cho thuộc tính style trong component mà mình muốn sử dụng
 ```
-
+export default App = () => {
+  return (
+    <View style = {stylesCSS.container}>
+    </View>
+  )
+}
 ```
